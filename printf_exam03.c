@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <stdarg.h>
-#include <stdio.h>
 
 int ft_string(char *str)
 {
@@ -76,14 +75,3 @@ int ft_printf(const char *format, ...)
     return (leng);
 }
 
-int main(void)
-{
-    //unsigned int num = -444745;
-    int num2 = -234111;
-    int len = 0;
-    len = ft_printf("Hola holita %x % s %d adios!", num2, "Hola caracola", num2);
-    printf("\nlen: %d\n", len);
-    //en =    printf("Hola holita %x % s %d adios!", num2, "Hola caracola", num2);
-    printf("\nlen: %d\n", len);
-    return (0);
-}
